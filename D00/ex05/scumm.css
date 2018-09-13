@@ -1,0 +1,204 @@
+body {
+	background-color: #505050;
+}
+
+#conteneur1 {
+	margin-top:1%;
+	display: flex;
+	background-color: #909090;
+	margin-left: 12%;
+	margin-right: 12%;
+	height: 200px;
+	border-radius:10px;
+	box-shadow: 10px 10px 10px #000000;
+}
+
+#conteneur2 {
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	margin-top:0.7%;
+	margin-right:0.7%;
+	margin-bottom:0.7%;
+	background-color: #909090;
+}
+
+#conteneur3{
+	display: flex;
+}
+
+#conteneur4 {
+	display: flex;
+	flex-direction: column;
+	background-color: #909090;
+	margin-top: 1%;
+	margin-left: 13.5%;
+	box-shadow: 10px 10px 10px #000000;
+	border-radius: 10px;
+	width: 7%;
+	height: 600px;
+}
+
+#conteneur5 {
+	display: flex;
+	background-color: #909090;
+	box-shadow: 10px 10px 10px #000000;
+	border-radius: 10px;
+	width: 56%;
+	height: 800px;
+	margin-left: 1.5%;
+	margin-top: 1%;
+}
+
+#conteneur6 {
+	display: flex;
+	flex-direction: column;
+	background-color: #909090;
+	margin-top: 1%;
+	margin-left: 1.5%;
+	box-shadow: 10px 10px 10px #000000;
+	border-radius: 10px;
+	width: 7%;
+	height: 600px;
+}
+
+#oeil {
+	border-radius:5px;
+	border: 5px solid red;
+}
+
+#conteneur2 img{
+	height: 30px;
+}
+
+#conteneur4 img{
+	margin-top:12px;
+	height: 90px;
+	width: 90px;
+}
+
+#conteneur5 img{
+	margin-top:10px;
+	margin-right:10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width:100%;
+}
+
+#day_of_the_42 {
+	margin-top: 0.7%;
+	margin-bottom: 0.7%;
+	width: 33%;
+}
+
+#loupe {
+	margin-top: 1.4%;
+	margin-left: 45%;
+	width: 20%;
+	height: 100%
+}
+
+#livre {
+	margin-top:10%;
+	margin-left:15%;
+	width:70%;
+}
+
+#serviette {
+	margin-top:5%;
+	margin-left:27.5%;
+	width:45%;
+}
+
+#pokeball {
+	margin-top:5%;
+	width:100%;
+	height: 25%;
+}
+
+.briques {
+	background: repeat url('resources/brick.jpg');
+	margin-top:5%;
+	margin-left:5%;
+	width: 90%;
+	height:15%;
+}
+
+#greenbox {
+	float: left;
+	width: 26%;
+	height: 16%;
+	background-color: #88FF89;
+	position: absolute;
+	margin-top: -5%;
+	margin-left: 10%;
+	border-radius: 15px;
+	box-shadow: 15px 15px 15px #000000;
+	font-family: Verdana;
+	font-size:22px;
+}
+
+.bold{
+	font-size: 55px;
+}
+
+.txtsha{
+	text-shadow: 9px 9px 7px rgba(255, 77, 49, 1);
+}
+
+#greenbox p {
+	line-height:100%;
+	margin: 0px;
+}
+
+.italic{
+	font-size: 25px !important;
+	font-style: italic;
+}
+
+.txt{
+	width: 70%;
+	margin-left: 10px;
+	height: 20px;
+}
+
+#textbox {
+	margin-top: 20px;
+	margin-left: 8px;
+}
+
+.sub{
+	border: medium none;
+	border-radius: 0;
+	font-size: 13px;
+	height: 26px;
+	letter-spacing: 1.6px;
+	width: 80px;
+}
+
+#Map {
+	shape
+}
+
+#recap {
+	margin-left:13.5%;
+	margin-right:13.5%;
+	display:flex;
+	height: 100%;
+}
+
+#namebox {
+	background-color: red;
+	width: 100%;
+	margin-top: 1%;
+	text-align: center;
+}
+
+#pokebox {
+	margin-top: 1%;
+	text-align: center;
+}
+#objectsbox {
+	margin-top: 1%;
+	text-align: center;
+}

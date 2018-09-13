@@ -1,0 +1,91 @@
+table {
+	width: 100%;
+	margin-bottom: 1%;
+}
+
+td {
+	border: 1% solid black;
+	width: 5.50%;
+	height: 20%;
+}
+
+p {
+	margin: 0%;
+	padding: 0%;
+}
+
+.no-border {
+	border:none;
+}
+
+.no-metaux {
+	background-color: #E1BEE7;
+}
+
+.metaux-al {
+	background-color: #FFA726;
+}
+
+.metaux-te {
+	background-color: #FFE0B2;
+}
+
+.meta {
+	background-color: #A5D6A7
+}
+
+.gaz {
+	background-color: #BBDEFB;
+}
+
+.metaux {
+	background-color: #FFF59D;
+}
+
+.halogene {
+	background-color: #F8BBD0;
+}
+
+.transition {
+	background-color: #DCEDC8;
+}
+
+.inconnu {
+	background-color: #E0E0E0;
+}
+
+.bottom {
+	background-color: #B2DFDB;
+}
+
+.bottom-act {
+	background-color: #4DB6AC;
+}
+
+.atom {
+	text-align: right;
+	padding: 3%;
+	font-size: 0.5vw;
+}
+
+.symbol {
+	text-align: center;
+	font-size: 1vw;
+}
+
+.number	{
+	text-align: left;
+	font-size: 0.5vw;
+}
+
+img {
+	max-width: 100%;
+	width: 20%;
+	height: 30%;
+}
+
+img.deco {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
