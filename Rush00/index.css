@@ -1,0 +1,61 @@
+
+#Bouttons {
+	text-align: right;
+	margin-top : 2.5vh;
+	margin-right: 0.5vw;
+}
+
+#items{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1vh;
+	justify-content: center;
+
+}
+
+#nmsto{
+	text-align: center;
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+}
+
+#nmsto p {
+	/*	line-height : 10px;*/
+	font-size: 12px;
+}
+
+.all_product
+{
+	border: 1px Solid black;
+	margin-left : 2.5%;
+	margin-right: 1.5%;
+	margin-top: 1.5%;
+	margin-bottom: 2.5%;
+	width:150px;
+	height: 210px;
+}
+
+.stock_end {
+	color: red;
+}
+
+.product_img
+{
+	width: 150px;
+	height: 150px;
+}
+
+button{
+	border: none;
+	background-color: inherit;
+	width: 7.5%;
+	font-size: 50%;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+button:hover{
+	background-color: #42A5F5;
+	border: 0.1em Solid Blue;
+	font-style: italic;
+}

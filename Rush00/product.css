@@ -1,0 +1,48 @@
+#allhere{
+	margin-top: 2%;
+	width:50%;
+	margin-left:25%;
+}
+#imgproduit {
+	width:50%;
+	margin-left: 25%;
+}
+
+#name {
+	text-align: center;
+	margin-top: 2.5%;
+}
+
+#descrip{
+	text-align: center;
+	margin-top: 2.5%;
+}
+
+#prix {
+	display:flex;
+	justify-content: center;
+	line-height: 2%;
+}
+
+
+#stock {
+	text-align: center;
+	line-height:2%;
+}
+
+#msg {
+	height: 1.5%;
+	text-align: center;
+	line-height:2%;
+}
+
+#prix img {
+	width: 10px;
+	height: 20px;
+	margin-top: 1%;
+}
+
+#order {
+	text-align: center;
+	justify-content: center;
+}

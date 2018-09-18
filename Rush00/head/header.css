@@ -1,0 +1,138 @@
+
+body {
+	background-color: #90A4AE;
+	max-width: 100%;
+	min-height: 90%;
+	display: flex;
+}
+
+#bigdiv {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #607D8B;
+	margin-right: 10vw;
+	margin-left: 10vw;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	width: 80vw;
+	min-height: 90vh;
+}
+
+/*********************************************************************/
+/* Header                                                            */
+/*********************************************************************/
+
+#header {
+	display:block;
+	background-color: inherit;
+	height : 10%;
+	width: 100%;
+}
+
+#connected {
+	float: right;
+	background-color: inherit;
+	width: 50%;
+	height: 100%;
+	position: relative;
+}
+
+#deco {
+	float: right;
+	background-color: inherit;
+	width: 45px;
+	height: 45px;
+}
+
+#deco:hover
+{
+	background-color: #42A5F5;
+}
+
+#pannierc {
+	float: right;
+	background-color: inherit;
+	width: 45px;
+	height: 45px;
+}
+
+#pannierc:hover
+{
+	background-color: #42A5F5;
+}
+#pannierd {
+	float: right;
+	background-color: inherit;
+	width: 45px;
+	height: 45px;
+}
+
+#pannierd:hover
+{
+	background-color: #42A5F5;
+}
+#noconnect {
+	float: right;
+	background-color: inherit;
+	width: 50%;
+	height: 100%;
+}
+
+#cobutton {
+	float: right;
+	background-color: inherit;
+	width: 45px;
+	height: 45px;
+}
+
+#cobutton:hover
+{
+	background-color: #42A5F5;
+}
+
+
+#hname
+{
+	margin-top: 0.5%;
+}
+
+#hname h1
+{
+	color: white;
+	display: inline;
+}
+
+#homec {
+	float: right;
+	background-color: inherit;
+	width: 45px;
+	height: 45px;
+}
+
+#homec:hover
+{
+	background-color: #42A5F5;
+}
+#homed {
+	float: right;
+	background-color: inherit;
+	width: 45px;
+	height: 45px;
+}
+
+#homed:hover
+{
+	background-color: #42A5F5;
+}
+#admin {
+	float: right;
+	background-color: inherit;
+	width: 45px;
+	height: 45px;
+}
+
+#admin:hover
+{
+	background-color: #42A5F5;
+}
