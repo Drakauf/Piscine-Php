@@ -6,3 +6,4 @@ Piscine Php (Septembre 2018)
 -> D03 :  75%.
 -> D04 :  60%.
 -> Rush00 : 108%.
+-> D05 : 55%.
