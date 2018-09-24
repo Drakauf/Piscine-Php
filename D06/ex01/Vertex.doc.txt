@@ -1,0 +1,16 @@
+<- Vertex ----------------------------------------------------------------------
+La classe Vertex creer un vertex (un point qui pourrait etre un pixel avec les
+parametres x,y,z,w,color).
+une instance peux etre construite avec la syntaxe suivante:
+new Vertex( array( 'x' => 255, 'y' => 255, 'z' => 255,'w' => 1.0, color) );
+or
+new Vertex( array( 'x' => 255, 'y' => 255, 'z' => 255) );
+avec w = 1.0 et color = blanc (256,256,256) par defaut
+Any other use is undefined behaviour.
+la classe inmplente les methodes suivantes avec nom_parametre etant un
+des 5 parametres precedants :
+set[nom_parametre]($a);
+set le parametre avec la valeur passee en parametre
+get();
+affiche le parametre
+---------------------------------------------------------------------- Vertex ->

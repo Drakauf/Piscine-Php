@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Balloon</title>
+		<style>
+.balle
+{
+	height : 200px;
+width: 200px;
+	background-color : red;
+	border-radius : 50%;
+}
+		</style>
+	</head>
+	<body>
+		<div class="balle" id="balle"></div>
+		<script>
+			window.onload = function()
+			{
+				var balle = document.getElementById("balle");
+				balle.addEventListener("click", gonflette);
+				balle.addEventListener("mouseleave", cardio);
+			}
+
+			var size = 200;
+			var colortab = ['red', 'green', 'blue'];
+			var colornum = 0;
+
+			function cardio()
+			{
+				size = size - 5;
+				colornum--;
+				if (size < 200)
+					size = 200;
+				if (colornum < 0)
+					colornum = 2;
+				balle.style.height = size + 'px';
+				balle.style.width = size + 'px';
+				balle.style.backgroundColor = colortab[colornum];
+			}
+			function gonflette()
+			{
+				size = size + 10;
+				colornum++;
+				if (size > 420)
+					size = 200;
+				if (colornum > 2)
+					colornum = 0;
+				balle.style.height = size + 'px';
+				balle.style.width = size + 'px';
+				balle.style.backgroundColor = colortab[colornum];
+			}
+		</script>
+	</body>
+</html>

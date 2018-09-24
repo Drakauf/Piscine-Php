@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+function check(nb1, nb2, ope) {
+	if (nb1 < 0|| nb2 < 0)
+	{
+		alert("Error :(");
+		return (-1);
+	}
+	if ((ope == 'div' || ope == 'mod') && nb2 == 0)
+	{
+		console.log("It’s over 9000!");
+		alert("It’s over 9000!");
+		return (-1);
+	}
+	return (1);
+}
+
+function result() {
+	var left = document.getElementById('left').value;
+	var right = document.getElementById('right').value;
+	if (!left || isNaN(left) || !right || isNaN(right))
+	{
+		alert("Error :(");
+		exit();
+	}
+	var nb1 = parseInt(left),
+	nb2 = parseInt(right),
+	ope = document.getElementById('ope').value,
+	res = 0;
+
+	if (check(nb1, nb2, ope) == 1)
+	{
+		switch (ope) {
+			case 'add' :
+				res = nb1 + nb2;
+				break;
+			case 'less':
+				res = nb1 - nb2;
+				break;
+			case 'mult':
+				res = nb1 * nb2;
+				break;
+			case 'div':
+				res = nb1 / nb2;
+				break;
+			case 'mod':
+				res = nb1 % nb2;
+				break;
+		}
+	}
+	else
+		exit();
+	console.log(res);
+	alert(res);
+}
+
+setInterval(function(){ alert("Try me!"); }, 30000);
+
+		</script>
+		<style type="text/css">
+
+		</style>
+		<form id="form">
+			<input type="text" name="left" id="left" />
+			<select name="select" id="ope">
+				<option value="add">+</option>
+				<option value="less">-</option>
+				<option value="mult">*</option>
+				<option value="div">/</option>
+				<option value="mod">%</option>
+			</select>
+			<input type="text" name="right" id="right" />
+			<input type="submit" name="submit" value="Try me!" onclick="result()">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Balloon</title>
+		<script src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous'></script>
+		<style>
+.balle
+{
+	height : 200px;
+width: 200px;
+	background-color : red;
+	border-radius : 50%;
+}
+		</style>
+	</head>
+	<body>
+		<div class="balle" id="balle"></div>
+		<script>
+			window.onload = function()
+			{
+				$("#balle").on('click', gonflette);
+				$("#balle").on("mouseleave", cardio);
+			}
+
+			var size = 200;
+			var colortab = ['red', 'green', 'blue'];
+			var colornum = 0;
+
+			function cardio()
+			{
+				size = size - 5;
+				colornum--;
+				if (size < 200)
+					size = 200;
+				if (colornum < 0)
+					colornum = 2;
+				$("#balle").css({"height" : size, "width" : size, "background-color" : colortab[colornum]});
+			}
+			function gonflette()
+			{
+				size = size + 10;
+				colornum++;
+				if (size > 420)
+					size = 200;
+				if (colornum > 2)
+					colornum = 0;
+				$("#balle").css({"height" : size, "width" : size, "background-color" : colortab[colornum]});
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Calculator</title>
+		<script src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous'></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+function check(nb1, nb2, ope) 
+{
+	if (nb1 < 0|| nb2 < 0)
+	{
+		alert("Error :(");
+		return (-1);
+	}
+	if ((ope == 'div' || ope == 'mod') && nb2 == 0)
+	{
+		console.log("It’s over 9000!");
+		alert("It’s over 9000!");
+		return (-1);
+	}
+	return (1);
+}
+
+function result() 
+{
+	var left = $("#left").val();
+	var right = $("#right").val();
+	if (!left || isNaN(left) || !right || isNaN(right))
+	{
+		alert("Error :( ");
+		return(0);
+	}
+	var nb1 = parseInt(left),
+	nb2 = parseInt(right),
+	res = 0,
+	ope = $("#ope").val();
+
+	if (check(nb1, nb2, ope) == 1)
+	{
+		switch (ope) 
+		{
+			case 'add' :
+				res = nb1 + nb2;
+				break;
+			case 'less':
+				res = nb1 - nb2;
+				break;
+			case 'mult':
+				res = nb1 * nb2;
+				break;
+			case 'div':
+				res = nb1 / nb2;
+				break;
+			case 'mod':
+				res = nb1 % nb2;
+				break;
+		}
+	}
+	else
+		return(0);
+	console.log(res);
+	alert(res);
+}
+setInterval(function(){ alert("Try me!"); }, 30000);
+		</script>
+		<form id="form" style="padding: 50px; border: solid 2px rgb(55, 113, 151); border-radius: 50px;">
+			<h2>Calculatrice</h2>
+			<input type="text" name="left" id="left" />
+			<select name="select" id="ope">
+				<option value="add">+</option>
+				<option value="less">-</option>
+				<option value="mult">*</option>
+				<option value="div">/</option>
+				<option value="mod">%</option>
+			</select>
+			<input type="text" name="right" id="right" />
+			<input type="submit" name="submit" value="Try me!" onclick="result()">
+		</form>
+	</body>
+</html>

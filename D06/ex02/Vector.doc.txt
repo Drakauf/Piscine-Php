@@ -1,0 +1,24 @@
+<- Vector ----------------------------------------------------------------------
+La classe Vector creer un Vecteur (un deplacement entre deux point, ici des
+instances de la class vertex).
+une instance peux etre construite avec la syntaxe suivante:
+new Vector(array(’dest’=>vertex1, ’orig’=>vetex2));
+or
+new Vertex( array( 'x' => 255, 'y' => 255, 'z' => 255) );
+avec w = 0.0 et color = ’orig’ (x=0, y=0, z=0, w=1) par defaut
+Any other use is undefined behaviour.
+la classe implente les methodes suivantes avec nom_parametre etant un
+des 4 parametres precedants :
+get() : affiche le parametre
+float magnitude() : retourne la longueur (ou "norme") du vecteur.
+Vector normalize() : retourne le vecteur normalisé. Si le vecteur est déja 
+normalisé, retourne une copie fraiche du vecteur.
+Vector add( Vector $rhs ) : retourne le vecteur somme des deux vecteurs.
+Vector sub( Vector $rhs ) : retourne le vecteur difference des deux vecteurs.
+Vector opposite() : retourne le vecteur opposé.
+Vector scalarProduct( $k ) : retourne le produit du vecteur avec un scalaire.
+float dotProduct( Vector $rhs ) : retourne le produit scalaire de deux vecteurs.
+float cos( Vector $rhs ) : retourne le cosinus de l’angle entre deux vecteurs.
+Vector crossProduct( Vector $rhs ) : retourne le produit en croix de deux
+vecteurs (repère main droite !)
+---------------------------------------------------------------------- Vector ->
